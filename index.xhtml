@@ -10,12 +10,7 @@
     />
 
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="common/css/bootstrap.min.css" />
     <!-- link css -->
     <link rel="stylesheet" href="common/css/theme.css" />
     <!-- cdn FontAwesome -->
@@ -29,6 +24,7 @@
 
   <body>
     <div class="container-main">
+      <!-- header -->
       <div class="header">
         <div class="header-top">
           <div class="container">
@@ -63,6 +59,7 @@
           </div>
         </div>
       </div>
+      <!-- banner -->
       <div class="banner">
         <div class="banner-nav">
           <div class="">
@@ -177,6 +174,7 @@
           </section>
         </div>
       </div>
+      <!-- footer -->
       <div class="footer">
         <div class="footer-main">
           <div class="container-fluid full-height">
@@ -223,29 +221,9 @@
       </div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        $('.nav-tabs > li > a').click(function(event) {
-          event.preventDefault();
-          var active_tab_selector = $('.nav-tabs > li.active > a').attr('href');
-          var actived_nav = $('.nav-tabs > li.active');
-          actived_nav.removeClass('active');
-          $(this)
-            .parents('li')
-            .addClass('active');
-          $(active_tab_selector).removeClass('active');
-          $(active_tab_selector).addClass('hide');
-          var target_tab_selector = $(this).attr('href');
-          $(target_tab_selector).removeClass('hide');
-          $(target_tab_selector).addClass('active');
-        });
-      });
-    </script>
+    <!-- jQuery first,   Bootstrap JS -->
+    <script src="common/js/bootstrap.min.js"></script>
+    <script src="common/js/jquery.min.js"></script>
+    <script src="/common/js/main.js"></script>
   </body>
 </html>
