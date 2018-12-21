@@ -321,27 +321,26 @@ a {
               background: url(../image/opacity-banner-bottom.png),
                 url(../image/backgound.png);
               height: 470px;
-              width: 85%;
+              width: 95%;
               position: relative;
               margin: 0px;
               background-size: cover;
               background-repeat: no-repeat, repeat;
-              background-position: calc(50% - 0px) 0%;
+              background-position: calc(50% - 0px) 19%;
               margin: auto;
             }
 
             .column-bottom {
-              width: 700px;
+              width: 63%;
               text-align: center;
               margin: auto;
               z-index: 1;
               position: absolute;
-              bottom: 10%;
+              bottom: 5%;
               left: 0;
               right: 0;
               font-family: 'Nunito-Regular';
-              padding: 5px;
-
+              padding: 32px;
               .title {
                 color: #ffffff;
                 font-size: 30px;
@@ -349,8 +348,8 @@ a {
 
               .content {
                 color: #ffffff;
-                font-size: 13px;
-                padding: 3;
+                font-size: 16px;
+                padding: 3px;
               }
             }
 
