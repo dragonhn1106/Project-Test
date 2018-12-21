@@ -182,8 +182,8 @@ a {
           line-height: 18px;
         }
 
-        > li {
-          > a {
+        >li {
+          >a {
             display: block;
           }
         }
@@ -205,18 +205,18 @@ a {
         width: 50%;
         padding: 30px 0 16px 0;
 
-        > li {
+        >li {
           margin: auto;
           position: relative;
           width: 25%;
 
-          > a:hover {
+          >a:hover {
             border-color: #eeeeee #eeeeee #dddddd;
           }
         }
 
-        .active > a,
-        .nav-tabs > .active > a:hover {
+        .active>a,
+        .nav-tabs>.active>a:hover {
           color: #4a5da9;
           cursor: default;
           background-color: #ffffff;
@@ -235,8 +235,8 @@ a {
       }
 
       .nav-tabs {
-        > li {
-          > a {
+        >li {
+          >a {
             text-align: center;
             font-family: 'Nunito-Regular';
           }
@@ -341,6 +341,7 @@ a {
               right: 0;
               font-family: 'Nunito-Regular';
               padding: 32px;
+
               .title {
                 color: #ffffff;
                 font-size: 30px;
@@ -456,6 +457,7 @@ a {
                 height: 90%;
                 margin: auto;
                 background-position: calc(80px - 115px) 126%;
+
                 .ava-block-center {
                   background: url(../image/ava-2.png);
                   width: 60%;
@@ -537,11 +539,18 @@ a {
                   opacity: 0.6;
                   line-height: 3;
                   font-size: 14px;
+
+
                 }
 
                 i {
                   color: #feffff;
                   font-family: Arial;
+                }
+
+                i::first-letter {
+                  color: #ff0000;
+                  font-size: xx-large;
                 }
               }
 
@@ -585,6 +594,7 @@ a {
               background: #4a5da9;
               width: 74%;
               position: relative;
+
               .content {
                 width: 80%;
                 height: 100%;
@@ -611,6 +621,7 @@ a {
                 }
               }
             }
+
             .column-right::after {
               content: '\A';
               border-style: solid;

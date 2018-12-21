@@ -376,6 +376,9 @@ a {
             .container-main .banner .banner-nav #tab-column-three .banner-main .row-tow .column-tow .column-tow-content i {
               color: #feffff;
               font-family: Arial; }
+            .container-main .banner .banner-nav #tab-column-three .banner-main .row-tow .column-tow .column-tow-content i::first-letter {
+              color: #ff0000;
+              font-size: xx-large; }
           .container-main .banner .banner-nav #tab-column-three .banner-main .row-tow .column-tow .column-tow-content:after {
             content: '';
             background: url(../image/icon-dau-phay.png);
