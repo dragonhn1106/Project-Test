@@ -12,7 +12,6 @@ li {
 a {
   text-decoration: none;
   color: #5b5959;
-
 }
 
 @font-face {
@@ -177,15 +176,14 @@ a {
 
         a {
           text-decoration: none;
-
         }
 
         li {
           line-height: 18px;
         }
 
-        >li {
-          >a {
+        > li {
+          > a {
             display: block;
           }
         }
@@ -207,18 +205,18 @@ a {
         width: 50%;
         padding: 30px 0 16px 0;
 
-        >li {
+        > li {
           margin: auto;
           position: relative;
           width: 25%;
 
-          >a:hover {
+          > a:hover {
             border-color: #eeeeee #eeeeee #dddddd;
           }
         }
 
-        .active>a,
-        .nav-tabs>.active>a:hover {
+        .active > a,
+        .nav-tabs > .active > a:hover {
           color: #4a5da9;
           cursor: default;
           background-color: #ffffff;
@@ -237,8 +235,8 @@ a {
       }
 
       .nav-tabs {
-        >li {
-          >a {
+        > li {
+          > a {
             text-align: center;
             font-family: 'Nunito-Regular';
           }
@@ -328,12 +326,12 @@ a {
               margin: 0px;
               background-size: cover;
               background-repeat: no-repeat, repeat;
-              background-position: calc(50% - 0px) 10%;
+              background-position: calc(50% - 0px) 0%;
               margin: auto;
             }
 
             .column-bottom {
-              width: 53%;
+              width: 700px;
               text-align: center;
               margin: auto;
               z-index: 1;
@@ -342,7 +340,7 @@ a {
               left: 0;
               right: 0;
               font-family: 'Nunito-Regular';
-              padding: 3px;
+              padding: 5px;
 
               .title {
                 color: #ffffff;
@@ -351,7 +349,8 @@ a {
 
               .content {
                 color: #ffffff;
-                font-size: 16px;
+                font-size: 13px;
+                padding: 3;
               }
             }
 
@@ -408,7 +407,7 @@ a {
                   top: 0;
                   left: 0;
                   z-index: 22;
-                  padding: 50px;
+                  padding: 50px 72px 0px 24px;
                   color: #feffff;
 
                   .title {
@@ -445,25 +444,32 @@ a {
 
             .banner-column-right {
               width: 30%;
-              background: url(../image/avata.png), #8cc776;
+              // background: url(../image/avata.png), #8cc776;
+              background-color: #8cc776;
               height: 42.5%;
               background-repeat: no-repeat;
               background-size: cover;
               position: relative;
-              background-position: calc(80px - 115px) 20%;
 
-              .ava-block-center {
-                background: url(../image/ava-2.png);
-                width: 60%;
-                height: 47%;
-                background-repeat: no-repeat;
-                background-size: auto;
-                position: absolute;
-                bottom: 0;
-                top: 0;
+              .banner-ava-main {
+                background: url(../image/avata.png);
+                width: 100%;
+                height: 90%;
                 margin: auto;
-                left: 0;
-                right: 0;
+                background-position: calc(80px - 115px) 126%;
+                .ava-block-center {
+                  background: url(../image/ava-2.png);
+                  width: 60%;
+                  height: 47%;
+                  background-repeat: no-repeat;
+                  background-size: auto;
+                  position: absolute;
+                  bottom: 0;
+                  top: 0;
+                  margin: auto;
+                  left: 0;
+                  right: 0;
+                }
               }
             }
 
@@ -548,7 +554,7 @@ a {
                 height: 32px;
                 background-size: cover;
                 background-repeat: no-repeat;
-                top: -15%;
+                top: -10%;
                 right: -10%;
               }
             }
@@ -573,13 +579,13 @@ a {
               background: url(../image/zai-dep.png);
               position: relative;
               background-repeat: no-repeat;
-              background-position: calc(50% - 0%) 50%;
+              background-position: calc(50% - -6%) 87%;
             }
 
             .column-right {
               background: #4a5da9;
               width: 74%;
-
+              position: relative;
               .content {
                 width: 80%;
                 height: 100%;
@@ -595,18 +601,28 @@ a {
                     font-family: Arial;
                     color: #feffff;
                     list-style-type: disc;
-                    margin-top: 5% !important
+                    margin-top: 5% !important;
                   }
-
-
                 }
 
                 .list-tow {
                   li {
-                    margin-left: 10%
+                    margin-left: 10%;
                   }
                 }
               }
+            }
+            .column-right::after {
+              content: '\A';
+              border-style: solid;
+              border-width: 18px 16px 18px 0;
+              border-color: transparent #4a5da9 transparent transparent;
+              bottom: 50%;
+              position: absolute;
+              left: -15px;
+              z-index: 20;
+              top: 40%;
+              margin: auto;
             }
           }
         }
@@ -616,7 +632,7 @@ a {
 
   .footer {
     background-color: #000000;
-    height: 318px;
+    height: 252px;
 
     .footer-main {
       width: 900px;

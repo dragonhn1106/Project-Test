@@ -222,10 +222,10 @@ a {
         margin: 0px;
         background-size: cover;
         background-repeat: no-repeat, repeat;
-        background-position: calc(50% - 0px) 10%;
+        background-position: calc(50% - 0px) 0%;
         margin: auto; }
       .container-main .banner .banner-nav #tab-column-three .banner-tab .banner-bottom .column-bottom {
-        width: 53%;
+        width: 700px;
         text-align: center;
         margin: auto;
         z-index: 1;
@@ -234,13 +234,14 @@ a {
         left: 0;
         right: 0;
         font-family: 'Nunito-Regular';
-        padding: 3px; }
+        padding: 5px; }
         .container-main .banner .banner-nav #tab-column-three .banner-tab .banner-bottom .column-bottom .title {
           color: #ffffff;
           font-size: 30px; }
         .container-main .banner .banner-nav #tab-column-three .banner-tab .banner-bottom .column-bottom .content {
           color: #ffffff;
-          font-size: 16px; }
+          font-size: 13px;
+          padding: 3; }
     .container-main .banner .banner-nav #tab-column-three .banner-main {
       background-color: #feffff;
       width: 900px;
@@ -270,7 +271,7 @@ a {
             top: 0;
             left: 0;
             z-index: 22;
-            padding: 50px;
+            padding: 50px 72px 0px 24px;
             color: #feffff; }
             .container-main .banner .banner-nav #tab-column-three .banner-main .banner-column .banner-column-left .banner-column-left-main .content-main .title {
               font-size: 30px;
@@ -295,24 +296,29 @@ a {
           left: 0; }
         .container-main .banner .banner-nav #tab-column-three .banner-main .banner-column .banner-column-right {
           width: 30%;
-          background: url(../image/avata.png), #8cc776;
+          background-color: #8cc776;
           height: 42.5%;
           background-repeat: no-repeat;
           background-size: cover;
-          position: relative;
-          background-position: calc(80px - 115px) 20%; }
-          .container-main .banner .banner-nav #tab-column-three .banner-main .banner-column .banner-column-right .ava-block-center {
-            background: url(../image/ava-2.png);
-            width: 60%;
-            height: 47%;
-            background-repeat: no-repeat;
-            background-size: auto;
-            position: absolute;
-            bottom: 0;
-            top: 0;
+          position: relative; }
+          .container-main .banner .banner-nav #tab-column-three .banner-main .banner-column .banner-column-right .banner-ava-main {
+            background: url(../image/avata.png);
+            width: 100%;
+            height: 90%;
             margin: auto;
-            left: 0;
-            right: 0; }
+            background-position: calc(80px - 115px) 126%; }
+            .container-main .banner .banner-nav #tab-column-three .banner-main .banner-column .banner-column-right .banner-ava-main .ava-block-center {
+              background: url(../image/ava-2.png);
+              width: 60%;
+              height: 47%;
+              background-repeat: no-repeat;
+              background-size: auto;
+              position: absolute;
+              bottom: 0;
+              top: 0;
+              margin: auto;
+              left: 0;
+              right: 0; }
         .container-main .banner .banner-nav #tab-column-three .banner-main .banner-column .banner-column-right:after {
           content: '\A';
           width: 0;
@@ -378,7 +384,7 @@ a {
             height: 32px;
             background-size: cover;
             background-repeat: no-repeat;
-            top: -15%;
+            top: -10%;
             right: -10%; }
         .container-main .banner .banner-nav #tab-column-three .banner-main .row-tow .column-three {
           position: relative;
@@ -396,10 +402,11 @@ a {
           background: url(../image/zai-dep.png);
           position: relative;
           background-repeat: no-repeat;
-          background-position: calc(50% - 0%) 50%; }
+          background-position: calc(50% - -6%) 87%; }
         .container-main .banner .banner-nav #tab-column-three .banner-main .row-three .column-right {
           background: #4a5da9;
-          width: 74%; }
+          width: 74%;
+          position: relative; }
           .container-main .banner .banner-nav #tab-column-three .banner-main .row-three .column-right .content {
             width: 80%;
             height: 100%;
@@ -418,9 +425,20 @@ a {
                 margin-top: 5% !important; }
             .container-main .banner .banner-nav #tab-column-three .banner-main .row-three .column-right .content .list-tow li {
               margin-left: 10%; }
+        .container-main .banner .banner-nav #tab-column-three .banner-main .row-three .column-right::after {
+          content: '\A';
+          border-style: solid;
+          border-width: 18px 16px 18px 0;
+          border-color: transparent #4a5da9 transparent transparent;
+          bottom: 50%;
+          position: absolute;
+          left: -15px;
+          z-index: 20;
+          top: 40%;
+          margin: auto; }
   .container-main .footer {
     background-color: #000000;
-    height: 318px; }
+    height: 252px; }
     .container-main .footer .footer-main {
       width: 900px;
       height: 100%;
